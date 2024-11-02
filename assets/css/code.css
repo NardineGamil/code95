@@ -1,0 +1,35 @@
+.login #login h1 a{
+    background-image: url(http://code95.local/wp-content/uploads/2024/10/cropped-code95-192x192.png);
+    background-size: contain;
+    width: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(1) brightness(20);
+    outline: none;
+}
+.login #login h1 a:hover{-webkit-animation:jello-diagonal-2 .8s both;animation:jello-diagonal-2 .8s both}
+body.login {background: #000;}
+#wp-submit {
+    background: #000;
+    border-color: #0000;
+}
+#backtoblog a, #nav a {color: #fff !important;}
+form#loginform {border-radius: 10%;}
+#user_login,#user_pass {
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    background: #f7f7f7;
+}
+.message {border-radius: 10px;}
+@-webkit-keyframes jello-diagonal-2{0%{-webkit-transform:skew(0deg 0deg);transform:skew(0deg 0deg)}30%{-webkit-transform:skew(-25deg -25deg);transform:skew(-25deg -25deg)}40%{-webkit-transform:skew(15deg,15deg);transform:skew(15deg,15deg)}50%{-webkit-transform:skew(-15deg,-15deg);transform:skew(-15deg,-15deg)}65%{-webkit-transform:skew(5deg,5deg);transform:skew(5deg,5deg)}75%{-webkit-transform:skew(-5deg,-5deg);transform:skew(-5deg,-5deg)}100%{-webkit-transform:skew(0deg 0deg);transform:skew(0deg 0deg)}}@keyframes jello-diagonal-2{0%{-webkit-transform:skew(0deg 0deg);transform:skew(0deg 0deg)}30%{-webkit-transform:skew(-25deg -25deg);transform:skew(-25deg -25deg)}40%{-webkit-transform:skew(15deg,15deg);transform:skew(15deg,15deg)}50%{-webkit-transform:skew(-15deg,-15deg);transform:skew(-15deg,-15deg)}65%{-webkit-transform:skew(5deg,5deg);transform:skew(5deg,5deg)}75%{-webkit-transform:skew(-5deg,-5deg);transform:skew(-5deg,-5deg)}100%{-webkit-transform:skew(0deg 0deg);transform:skew(0deg 0deg)}}
+.edit-widgets-block-editor .edit-widgets-main-block-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.widgets-php .block-editor-block-list__layout.is-root-container>.wp-block{
+    margin: 0;
+    width: calc(25% - 23px);
+}
+.block-editor-block-list__layout.is-root-container>.wp-block:last-child,body.user-new-php table.form-table tr.form-field:nth-of-type(5){display: none;}
